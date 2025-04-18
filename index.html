@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Gaming - الصفحة الرئيسية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(135deg, #111, #222);
+      color: white;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+    }
+    header img {
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #f0f0f0;
+    }
+    .section {
+      padding: 20px;
+      border-bottom: 1px solid #444;
+    }
+    .section h2 {
+      color: #ffcc00;
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background: #333;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    .product button {
+      padding: 5px 15px;
+      background-color: #28a745;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .socials {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+    }
+    .socials a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .socials img {
+      height: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="صوره الملف الشخصي.jpg" alt="Ali Gaming">
+    <h1>Ali Gaming</h1>
+  </header>  <div class="section">
+    <h2>عروض شحن شدات ببجي</h2>
+    <div class="product">60 شدة - 46 جنيه <button onclick="goToPayment('60 شدة', 46)">شراء</button></div>
+    <div class="product">120 شدة - 90 جنيه <button onclick="goToPayment('120 شدة', 90)">شراء</button></div>
+    <div class="product">325 شدة - 225 جنيه <button onclick="goToPayment('325 شدة', 225)">شراء</button></div>
+    <div class="product">660 شدة - 470 جنيه <button onclick="goToPayment('660 شدة', 470)">شراء</button></div>
+    <div class="product">1850 شدة - 1210 جنيه <button onclick="goToPayment('1850 شدة', 1210)">شراء</button></div>
+    <div class="product">2850 شدة - 2350 جنيه <button onclick="goToPayment('2850 شدة', 2350)">شراء</button></div>
+    <div class="product">8100 شدة - 4700 جنيه <button onclick="goToPayment('8100 شدة', 4700)">شراء</button></div>
+    <div class="product">16200 شدة - 9500 جنيه <button onclick="goToPayment('16200 شدة', 9500)">شراء</button></div>
+  </div>  <div class="section">
+    <h2>أرقام للتطبيقات</h2>
+    <div class="product">رقم أمريكي - 30 جنيه <button onclick="goToPayment('رقم أمريكي', 30)">شراء</button></div>
+    <div class="product">رقم كندي - 35 جنيه <button onclick="goToPayment('رقم كندي', 35)">شراء</button></div>
+    <div class="product">رقم ألماني - 40 جنيه <button onclick="goToPayment('رقم ألماني', 40)">شراء</button></div>
+  </div>  <div class="section">
+    <h2>فيز شحن سبام</h2>
+    <div class="product">30% نسبة نجاح - 300 جنيه <button onclick="goToPayment('فيزا 30%', 300)">شراء</button></div>
+    <div class="product">50% نسبة نجاح - 430 جنيه <button onclick="goToPayment('فيزا 50%', 430)">شراء</button></div>
+    <div class="product">70% نسبة نجاح - 600 جنيه <button onclick="goToPayment('فيزا 70%', 600)">شراء</button></div>
+    <div class="product">80% نسبة نجاح - 750 جنيه <button onclick="goToPayment('فيزا 80%', 750)">شراء</button></div>
+  </div>  <div class="socials">
+    <a href="https://www.facebook.com/share/1Bhx3YAurZ/"><img src="facebook.png"></a>
+    <a href="https://www.instagram.com/aliradwan4387/"><img src="instagram.png"></a>
+    <a href="https://www.tiktok.com/@aliradwan2009"><img src="tiktok.png"></a>
+    <a href="https://youtube.com/@sniper12620"><img src="youtube.png"></a>
+    <a href="https://wa.me/201080265792"><img src="whatsapp.png"></a>
+  </div>  <footer>
+    <p>نبذة عنا: نقوم بتوفير خدمات شحن شدات ببجي، أرقام تطبيقات، فيز سبام بكل أمان وسرعة. يتم إرسال الفيزا أونلاين فور الدفع.</p>
+    <p>الدعم: تواصل معنا على واتساب 01080265792</p>
+    <p>جميع الحقوق محفوظة © Ali Gaming</p>
+  </footer>  <script>
+    function goToPayment(product, price) {
+      window.location.href = `payment.html?product=${encodeURIComponent(product)}&price=${price}`;
+    }
+  </script></body>
+</html>
