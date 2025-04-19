@@ -1,113 +1,117 @@
 <!DOCTYPE html><html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali Gaming - الصفحة الرئيسية</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Gaming Store</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Tajawal', sans-serif;
-      background: linear-gradient(135deg, #111, #222);
+      font-family: 'Cairo', sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2021/12/05/13/10/video-games-6848395_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
     }
     header {
-      display: flex;
-      align-items: center;
-      background-color: #1a1a1a;
-      padding: 10px 20px;
+      text-align: center;
+      padding: 20px;
     }
     header img {
-      height: 50px;
-      border-radius: 50%;
-      margin-left: 10px;
+      width: 120px;
+      background-color: transparent;
     }
-    header h1 {
-      font-size: 24px;
-      color: #f0f0f0;
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
     }
     .section {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px;
       padding: 20px;
-      border-bottom: 1px solid #444;
-    }
-    .section h2 {
-      color: #ffcc00;
+      border-radius: 15px;
     }
     .product {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px;
-      background: #333;
       margin: 10px 0;
-      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.02);
     }
     .product button {
-      padding: 5px 15px;
       background-color: #28a745;
       border: none;
-      border-radius: 5px;
+      padding: 10px 20px;
+      border-radius: 8px;
       color: white;
       font-weight: bold;
       cursor: pointer;
+      transition: background 0.3s;
     }
-    .socials {
-      background: #000;
+    .product button:hover {
+      background-color: #218838;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
       text-align: center;
       padding: 20px;
     }
-    .socials a {
+    a {
+      color: #00c3ff;
       margin: 0 10px;
-      display: inline-block;
-    }
-    .socials img {
-      height: 30px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #111;
-      color: #ccc;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="صوره الملف الشخصي.jpg" alt="Ali Gaming">
-    <h1>Ali Gaming</h1>
+    <img src="https://i.imgur.com/oO9wSds.png" alt="Logo" />
+    <h1>Ali Gaming Store</h1>
+    <p>أفضل موقع لشحن الألعاب</p>
   </header>  <div class="section">
-    <h2>عروض شحن شدات ببجي</h2>
-    <div class="product">60 شدة - 46 جنيه <button onclick="goToPayment('60 شدة', 46)">شراء</button></div>
-    <div class="product">120 شدة - 90 جنيه <button onclick="goToPayment('120 شدة', 90)">شراء</button></div>
-    <div class="product">325 شدة - 225 جنيه <button onclick="goToPayment('325 شدة', 225)">شراء</button></div>
-    <div class="product">660 شدة - 470 جنيه <button onclick="goToPayment('660 شدة', 470)">شراء</button></div>
-    <div class="product">1850 شدة - 1210 جنيه <button onclick="goToPayment('1850 شدة', 1210)">شراء</button></div>
-    <div class="product">2850 شدة - 2350 جنيه <button onclick="goToPayment('2850 شدة', 2350)">شراء</button></div>
-    <div class="product">8100 شدة - 4700 جنيه <button onclick="goToPayment('8100 شدة', 4700)">شراء</button></div>
-    <div class="product">16200 شدة - 9500 جنيه <button onclick="goToPayment('16200 شدة', 9500)">شراء</button></div>
+    <h2>شدات ببجي</h2>
+    <div class="product"><span>60 شدة - 22 EGP</span><button>شراء</button></div>
+    <div class="product"><span>325 شدة - 105 EGP</span><button>شراء</button></div>
+    <div class="product"><span>660 شدة - 210 EGP</span><button>شراء</button></div>
+    <div class="product"><span>1800 شدة - 520 EGP</span><button>شراء</button></div>
+    <div class="product"><span>3850 شدة - 1000 EGP</span><button>شراء</button></div>
   </div>  <div class="section">
-    <h2>أرقام للتطبيقات</h2>
-    <div class="product">رقم أمريكي - 30 جنيه <button onclick="goToPayment('رقم أمريكي', 30)">شراء</button></div>
-    <div class="product">رقم كندي - 35 جنيه <button onclick="goToPayment('رقم كندي', 35)">شراء</button></div>
-    <div class="product">رقم ألماني - 40 جنيه <button onclick="goToPayment('رقم ألماني', 40)">شراء</button></div>
+    <h2>شحن فري فاير</h2>
+    <div class="product"><span>100 جوهرة - 22 EGP</span><button>شراء</button></div>
+    <div class="product"><span>310 جوهرة - 65 EGP</span><button>شراء</button></div>
+    <div class="product"><span>520 جوهرة - 105 EGP</span><button>شراء</button></div>
+    <div class="product"><span>1060 جوهرة - 210 EGP</span><button>شراء</button></div>
   </div>  <div class="section">
-    <h2>فيز شحن سبام</h2>
-    <div class="product">30% نسبة نجاح - 300 جنيه <button onclick="goToPayment('فيزا 30%', 300)">شراء</button></div>
-    <div class="product">50% نسبة نجاح - 430 جنيه <button onclick="goToPayment('فيزا 50%', 430)">شراء</button></div>
-    <div class="product">70% نسبة نجاح - 600 جنيه <button onclick="goToPayment('فيزا 70%', 600)">شراء</button></div>
-    <div class="product">80% نسبة نجاح - 750 جنيه <button onclick="goToPayment('فيزا 80%', 750)">شراء</button></div>
-  </div>  <div class="socials">
-    <a href="https://www.facebook.com/share/1Bhx3YAurZ/"><img src="facebook.png"></a>
-    <a href="https://www.instagram.com/aliradwan4387/"><img src="instagram.png"></a>
-    <a href="https://www.tiktok.com/@aliradwan2009"><img src="tiktok.png"></a>
-    <a href="https://youtube.com/@sniper12620"><img src="youtube.png"></a>
-    <a href="https://wa.me/201080265792"><img src="whatsapp.png"></a>
+    <h2>FC Mobile - FC Points</h2>
+    <div class="product"><span>40 نقطة - 22 EGP</span><button>شراء</button></div>
+    <div class="product"><span>100 نقطة - 55 EGP</span><button>شراء</button></div>
+    <div class="product"><span>520 نقطة - 275 EGP</span><button>شراء</button></div>
+    <div class="product"><span>1070 نقطة - 550 EGP</span><button>شراء</button></div>
+    <div class="product"><span>2200 نقطة - 1100 EGP</span><button>شراء</button></div>
+    <div class="product"><span>5750 نقطة - 2750 EGP</span><button>شراء</button></div>
+    <div class="product"><span>12000 نقطة - 5500 EGP</span><button>شراء</button></div>
+  </div>  <div class="section">
+    <h2>FC Mobile - Silver</h2>
+    <div class="product"><span>Silver 39 - 22 EGP</span><button>شراء</button></div>
+    <div class="product"><span>Silver 99 - 55 EGP</span><button>شراء</button></div>
+    <div class="product"><span>Silver 499 - 275 EGP</span><button>شراء</button></div>
+    <div class="product"><span>Silver 999 - 550 EGP</span><button>شراء</button></div>
+    <div class="product"><span>Silver 1999 - 1100 EGP</span><button>شراء</button></div>
+    <div class="product"><span>Silver 4999 - 2750 EGP</span><button>شراء</button></div>
+    <div class="product"><span>Silver 9999 - 5500 EGP</span><button>شراء</button></div>
   </div>  <footer>
-    <p>نبذة عنا: نقوم بتوفير خدمات شحن شدات ببجي، أرقام تطبيقات، فيز سبام بكل أمان وسرعة. يتم إرسال الفيزا أونلاين فور الدفع.</p>
-    <p>الدعم: تواصل معنا على واتساب 01080265792</p>
-    <p>جميع الحقوق محفوظة © Ali Gaming</p>
-  </footer>  <script>
-    function goToPayment(product, price) {
-      window.location.href = `payment.html?product=${encodeURIComponent(product)}&price=${price}`;
-    }
-  </script></body>
+    <p>تواصل معنا:</p>
+    <a href="https://t.me/+NGBwu1yP6x81YzFk">تليجرام</a>
+    <a href="https://youtube.com/@sniper12620?si=u6_gUp9_BNipbl_S">يوتيوب</a>
+    <a href="https://www.facebook.com/share/1Bhx3YAurZ/">فيسبوك</a>
+    <a href="https://www.tiktok.com/@aliradwan2009?_t=ZS-8vdeFLQB7y6&_r=1">تيك توك</a>
+    <a href="https://www.instagram.com/aliradwan4387/profilecard/?igsh=bHdqcDJsNzVxdmU2">إنستقرام</a>
+    <p>واتساب: 01080265792 / 01005433626</p>
+  </footer>
+</body>
 </html>
